@@ -20,7 +20,7 @@ export default function Footer() {
             +1 (352) 283-9121
           </a>
           <a
-            href="https://linkedin.com/in/rbogulla"
+            href="https://www.linkedin.com/in/rohit-bogulla/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--accent)] hover:underline font-mono"
@@ -28,7 +28,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://github.com/rbogulla"
+            href="https://github.com/Kamehamehaaaaa"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--accent)] hover:underline font-mono"
@@ -37,9 +37,9 @@ export default function Footer() {
           </a>
         </div>
         <p className="text-[var(--text-muted)] text-sm mt-6">Gainesville, Florida 32608</p>
-        <p className="text-[var(--text-muted)] text-xs mt-6 font-mono">
+        {/* <p className="text-[var(--text-muted)] text-xs mt-6 font-mono">
           Built with React · Vite · Tailwind
-        </p>
+        </p> */}
       </motion.div>
     </footer>
   );

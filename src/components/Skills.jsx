@@ -60,12 +60,12 @@ export default function Skills() {
 
                   {/* Hover details (static CSS reveal, no motion state needed) */}
                   <div className="skill-card__details mt-4 pt-4 border-t border-[var(--border)]">
-                    <p className="font-mono text-[0.7rem] text-[var(--accent)] mb-2">
+                    {/* <p className="font-mono text-[0.7rem] text-[var(--accent)] mb-2">
                       agent.note(&quot;{s.category}&quot;)
-                    </p>
+                    </p> */}
                     <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                      Placeholder: add a short story about how you use <span className="text-[var(--text)]">{s.category}</span>{" "}
-                      in real production systems, research, or projects.
+                      {/* Placeholder: add a short story about how you use <span className="text-[var(--text)]">{s.category}</span>{" "}
+                      in real production systems, research, or projects. */}
                     </p>
                   </div>
                 </div>

@@ -40,9 +40,9 @@ export default function Hero() {
           <span className="text-[var(--border)]">|</span>
           <a href="tel:+13522839121" className="hover:text-[var(--accent)] transition">+1 (352) 283-9121</a>
           <span className="text-[var(--border)]">|</span>
-          <a href="https://linkedin.com/in/rbogulla" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/rohit-bogulla/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition">LinkedIn</a>
           <span className="text-[var(--border)]">|</span>
-          <a href="https://github.com/rbogulla" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition">GitHub</a>
+          <a href="https://github.com/Kamehamehaaaaa" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition">GitHub</a>
           <span className="text-[var(--border)]">|</span>
           <span>Gainesville, Florida 32608</span>
         </div>
@@ -64,7 +64,7 @@ export default function Hero() {
             transition={{ duration: 0.4, delay: 0.15 }}
             className="font-mono text-sm text-[var(--accent)] mt-2 mb-4"
           >
-            &gt; AI/ML Platform Engineer
+            &gt; Software Developer and AI/ML Platform Engineer
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ export default function Hero() {
             transition={{ duration: 0.4, delay: 0.2 }}
             className="text-[var(--text-muted)] text-lg max-w-2xl leading-relaxed"
           >
-            MS in Computer Science (4.0 GPA) at University of Florida. 4+ years building production ML systems and large-scale distributed infrastructure—150M+ records at sub-200ms latency, 10M+ events/day with 99.9% uptime. Python, C++, Go, Java · PyTorch, TensorFlow, LangChain · Kubernetes, Kafka, Spark.
+            MS in Computer Science (4.0 GPA) at University of Florida. 4+ years building production ML systems and large-scale distributed infrastructure - 150M+ records at sub-200ms latency, 10M+ events/day with 99.9% uptime. Python, C++, Go, Java · PyTorch, TensorFlow, LangChain · Kubernetes, Kafka, Spark.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -39,17 +39,19 @@ export default function Projects() {
         >
           <h2 className="text-3xl font-bold">Project Agents</h2>
           <p className="text-[var(--text-muted)] mt-2 max-w-xl">
-            Scroll to browse. Hover a project tile to have that agent enlarge and reveal the full brief while its
-            partner shifts aside.
+            {/* Scroll to browse. Hover a project tile to have that agent enlarge and reveal the full brief while its
+            partner shifts aside. */}
           </p>
         </motion.div>
 
         {/* Horizontal scroll: each snap page contains 2 expanding tiles */}
-        <div className="scroll-row flex gap-6 overflow-x-auto snap-x snap-mandatory">
+        {/* <div className="scroll-row flex gap-6 overflow-x-auto snap-x snap-mandatory"> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {pages.map((pair, pageIdx) => (
             <div
               key={pageIdx}
-              className="snap-start shrink-0 w-full flex gap-4"
+              // className="snap-start shrink-0 w-full flex gap-4"
+              className="contents"
             >
               {pair.map((p, i) => {
                 const id = p.title;
@@ -59,6 +61,7 @@ export default function Projects() {
                     key={id}
                     className="relative flex-1 min-w-[280px]"
                     onMouseEnter={() => setActiveId(id)}
+                    onMouseLeave={() => setActiveId(null)}
                   >
                     <motion.article
                       layout
@@ -101,7 +104,7 @@ export default function Projects() {
                           {p.description}
                         </p>
 
-                        {/* Full details when active */}
+                        
                         <AnimatePresence initial={false}>
                           {isActive && (
                             <motion.div
@@ -151,6 +154,58 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
+
+
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((p, i) => {
+            const id = p.title;
+            const isActive = activeId === id;
+
+            return (
+              <motion.article
+                key={id}
+                layout
+                onMouseEnter={() => setActiveId(id)}
+                onMouseLeave={() => setActiveId(null)}
+                animate={{
+                  scale: isActive ? 1.06 : 1,
+                  zIndex: isActive ? 10 : 1,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                }}
+                className="relative rounded-lg border cursor-pointer p-5 bg-[var(--bg-card)]"
+              >
+                <RobotMascot size="sm" animate={false} />
+
+                <h3 className="font-semibold mt-2">{p.title}</h3>
+                <p className="text-sm text-[var(--text-muted)]">{p.org}</p>
+                <p className="text-sm mt-2">{p.description}</p>
+
+                <AnimatePresence>
+                  {isActive && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="mt-3"
+                    >
+                      {p.highlights.map((h, j) => (
+                        <div key={j} className="text-sm">
+                          ▹ {h}
+                        </div>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.article>
+            );
+          })}
+        </div> */}
+
       </div>
     </section>
   );
